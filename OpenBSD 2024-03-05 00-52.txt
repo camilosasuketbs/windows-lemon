@@ -1,0 +1,25 @@
+cmake -S . -B cmake-build-debug
+
+
+.
+.
+.
+.
+
+
+(3) PKGCONFIG_LIBRARIES is mpg123
+(3) PKGCONFIG_DIRS is /usr/local/lib
+.
+.
+.
+(4) PKGCONFIG_LIBRARIES is mpg123
+
+.
+.
+.
+
+(7) PKGCONFIG_LIBRARIES is mpg123
+
+networking_bsd USE_PKGCONFIG
+
+

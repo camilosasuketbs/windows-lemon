@@ -1,0 +1,4 @@
+
+We will give 2 options for now. One is what we have. Auto naming p1 p2 R1 R2 at the end of string
+
+Second option is custom name that wil allow user to simply click on P1 and change to whatever they like .. if they want to use number they can use internally in that field

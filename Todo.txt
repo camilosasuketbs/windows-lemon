@@ -1,0 +1,89 @@
+- Twitter Post from Resident as part of stream companion
+- Video Capture Recorder, FFMPEG with x265
+- 2023-06-June In color impact (color_sel:color selector) put also a color wheel selector (from nanoui?)
+- 2023-11 Start implementing very simple audio application - Player with Wave Form Viewer.
+
+- 2024-01-06 10:17
+  mememories_tv@twitch.tv 
+  um i remember you were working on screensavers a while ago
+  maybe something related to that
+  would be cool
+
+- 2024-01-30
+- Lowluds "when would you decide to clean up ca2 store." Moderator
+  10:04
+- Lowluds "ModeratorTurbolowluds: its a bit messy" Moderator
+  10:05
+- "ModeratorTurbolowluds: many apps not available. user experience can be frusterating."
+- todo : ca2 Store Stabilization
+- Mail Client application - Start simple, maybe buggy, but create mdp!! (Minimum Draft product)
+- implement multi row tabs.
+- (C) create text_to_speech plugin for stream elements voices https://api.streamelements.com/kappa/v2/speech?voice=Emma&text=This%20is%20a%20test.
+  (C) https://thingsofboredom.github.io/tts-tado/
+  (C) https://raw.githubusercontent.com/thingsofboredom/tts-tado/dev/voices.json
+- check if there is option to overwrite zip extracted files.
+- at zip extraction for installation at macos, first need to delete existing folder structure (code signing)
+- Tiled Map Editor - Suggestion by Julien Leal (Twitch/LiveCoding) (Julien Ambrosio at LinkedIn)
+
+
+- Check List :
+   - Dark/Lite Mode is working at each application?
+
+- Add OneDrive? Add GoogleDrive? create filesystem_dropbox(C) filesystem_onedrive and filesystem_googledrive?
+
+2024-10-08
+5:26
+1-Month SubscriberTwitch Recap 2023GearsovWar: we need a channel point redemption for "play the piano"
+
+-What do you think of working on the desk application
+2025-01-05 
+HesaTV (From Tectuma channel)
+mentioned doxygen.ca2.software not working...
+Maybe create application to setup it....
+
+2025-02-14
+(C) create easily switch toggle in ambient to put operating_system summary into the wallpaper
+(C) Uncompress the weather.zip after downloading it... take opportunity to check if it is applying the zip file time stamps...
+
+
+2025-03-21
+Very tight schedule (2years 2027) but if it takes a bit more or a lot more|||
+create load ini function: I think already exists.
+and a patch ini function: that saves respecting exisiting spacing, formatting, and put new keys at end. This is merge mode. 
+( for now won't delete non existing keys in the patch, what would be sync mode that could optionally just mark deleted keys
+with # and # (comment) deleted on <date> (by <user>)?).
+Todo put at least four fields at netnode_desktop options form:
+domain  IPv4 address
+<domain>=<ip_address>
+
+domain  IPv6 address
+<domain>=<ip_address>
+
+and show path where <domain>.cat is expected to be (full certificat with private key).
+
+2025-03-24
+Work with Lowluds (and maybe also smokesess) on audio project, mainly DAW.
+Start by adding ability to show beats in a audio piece (using visual cues) in the Audio Viewer program using
+Aubio library.
+
+2025-03-27
+Create installations_maps:
+Examples:
+linuxmint-cinnamon <- xubuntu
+linuxmint-cinnamon 22.1 <- xubuntu 24.10
+
+2025-05-02
+Showing the Build Plan and Log at Google spreadsheet lowluds suggested to create a ca2 app for
+that.  
+9:43
+ModeratorTurbolowluds: Some names can be: AppTime, WorkLog TimeTrack AppHours TaskTime 
+UseageLog AppMonitor WorkTimer TImeshee
+I came with BuildPlan&Log for now
+
+2025+06+28 while talking to very inspiring V0idsEmbrace@Twitch
+nano2d chained with draw2d_opengl -> why not a short circuit still using nanovg nano2d_nanovg
+try hard to use vkvg at draw2d_vkvg by making transparence/translucency work
+
+2025-09-28 05-06 tk_pending: Just to let you know some of your links in the description don't work
+
+

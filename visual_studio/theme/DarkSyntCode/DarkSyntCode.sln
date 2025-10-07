@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSyntCode", "DarkSyntCode\DarkSyntCode.csproj", "{4DDD944D-C983-4334-990B-A47AF82FC504}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Debug|x86.ActiveCfg = Debug|x86
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Debug|x86.Build.0 = Debug|x86
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Release|x86.ActiveCfg = Release|x86
+		{4DDD944D-C983-4334-990B-A47AF82FC504}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {897B5135-164A-48E0-8432-DFA879364ED7}
+	EndGlobalSection
+EndGlobal

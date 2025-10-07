@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <MSBUildProjectExtensionsPath>..\..\..\..\..\time-windows\objext\$(RootNamespace)\$(Configuration)\$(Platform)\</MSBUildProjectExtensionsPath>
+    </PropertyGroup>
+</Project>

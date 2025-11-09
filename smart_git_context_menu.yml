@@ -1,0 +1,8 @@
+tools:
+- name: Checkout
+  fileStarter: {command: '${gitDir}\git-bash.exe', parameters: '--cd=${filePath} -c
+      "checkout; exec bash"'}
+  useForOpen: true
+  waitUntilFinished: false
+  filePattern: '*'
+  forFilesNotDirectories: false

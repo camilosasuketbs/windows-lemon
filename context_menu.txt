@@ -1,0 +1,2 @@
+copy and add last modified time as file name suffix and as file prefix;application_build_helper;--copy-and-add-last-modified-time-as-file-name-suffix-and-as-file-prefix
+create default .def file;application_build_helper;--create-default-_def-file;interactive

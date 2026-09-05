@@ -2,3 +2,7 @@
 	path = lemon
 	url = ../lemon
 	branch = main
+[submodule "blue_visual_studio_theme"]
+	path = blue_visual_studio_theme
+	url = ../../ca2/blue_visual_studio_theme
+	branch = main

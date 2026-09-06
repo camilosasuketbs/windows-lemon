@@ -1,0 +1,29 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Nord.8ce705fa-fb50-4e77-b87d-55132824d174" Version="0.2.1" Language="en-US" Publisher="svengreb" />
+    <DisplayName>Nord</DisplayName>
+    <Description xml:space="preserve">An arctic, north-bluish clean and elegant Visual Studio theme</Description>
+    <MoreInfo>https://github.com/arcticicestudio/nord-visual-studio</MoreInfo>
+    <License>license.txt</License>
+    <GettingStartedGuide>https://www.nordtheme.com/docs/ports/visual-studio</GettingStartedGuide>
+    <ReleaseNotes>https://github.com/arcticicestudio/nord-visual/blob/main/changelog.md</ReleaseNotes>
+    <Icon>assets\images\icon.png</Icon>
+    <PreviewImage>assets\images\preview.jpg</PreviewImage>
+    <Tags>nord, nordic, dark, blue, color, theme, syntax, highlighting, vscode, scheme</Tags>
+    <Preview>true</Preview>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Nord.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

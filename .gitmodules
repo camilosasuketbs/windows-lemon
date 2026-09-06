@@ -6,3 +6,7 @@
 	path = blue_visual_studio_theme
 	url = ../../ca2/blue_visual_studio_theme
 	branch = main
+[submodule "nord_visual_studio_theme"]
+	path = nord_visual_studio_theme
+	url = ../../ca2/nord_visual_studio_theme
+	branch = main

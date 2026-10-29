@@ -87,3 +87,9 @@ try hard to use vkvg at draw2d_vkvg by making transparence/translucency work
 2025-09-28 05-06 tk_pending: Just to let you know some of your links in the description don't work
 
 
+2026-03-30 09:04 Put more information about the operating system in the About's operating system information
+
+2026-08-16 02:46 2:44 SubscriberV0idsEmbrace: can we watch a video on the monitor?
+(remark by camilo: monitor->hello_space<-continuum with monitor showing animated hello multiverse)
+
+2026-09-05 16:19 V0idsEmbrace: do you still have the orbiting point lights? (while running app-graphics3d/continuum)

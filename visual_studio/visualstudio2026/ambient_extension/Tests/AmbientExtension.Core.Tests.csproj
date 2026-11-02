@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><Nullable>enable</Nullable><ImplicitUsings>disable</ImplicitUsings></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Core\AmbientFile.cs" Link="Core\AmbientFile.cs" />
+    <Compile Include="..\Core\AssociationStore.cs" Link="Core\AssociationStore.cs" />
+    <Compile Include="..\Core\SynchronizationState.cs" Link="Core\SynchronizationState.cs" />
+  </ItemGroup>
+</Project>

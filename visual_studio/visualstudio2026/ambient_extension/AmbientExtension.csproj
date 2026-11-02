@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{F8A50B12-70E4-45D1-82E2-F11C65F1DAD3}</ProjectGuid>
+    <ProjectTypeGuids>{82B43B9B-A64C-4715-B499-D71E9CA2BD60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AmbientExtension</RootNamespace>
+    <AssemblyName>AmbientExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <OutputPath>$(BaseOutputPath)$(Configuration)\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize Condition="'$(Configuration)' == 'Release'">true</Optimize>
+    <GeneratePkgDefFile>true</GeneratePkgDefFile>
+    <UseCodebase>true</UseCodebase>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+    <DeployExtension>false</DeployExtension>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(DevEnvDir)devenv.exe</StartProgram>
+    <StartArguments>/RootSuffix Exp /Log</StartArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2142" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AmbientPackage.cs" />
+    <Compile Include="ThemeService.cs" />
+    <Compile Include="AmbientSynchronizer.cs" />
+    <Compile Include="Core\AmbientFile.cs" />
+    <Compile Include="Core\AssociationStore.cs" />
+    <Compile Include="Core\SynchronizationState.cs" />
+    <None Include="source.extension.vsixmanifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" />
+  <PropertyGroup>
+    <AmbientExtensionPublishDirectory Condition="'$(AmbientExtensionPublishDirectory)' == ''">$(USERPROFILE)\dropbox\net\public\download\visual_studio_2026</AmbientExtensionPublishDirectory>
+  </PropertyGroup>
+  <Target Name="PublishAmbientExtensionVsix" AfterTargets="CreateVsixContainer" Condition="'$(PublishAmbientExtension)' != 'false'">
+    <MakeDir Directories="$(AmbientExtensionPublishDirectory)" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).vsix" DestinationFiles="$(AmbientExtensionPublishDirectory)\AmbientExtension.vsix" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="Ambient Extension published to $(AmbientExtensionPublishDirectory)\AmbientExtension.vsix" />
+  </Target>
+</Project>

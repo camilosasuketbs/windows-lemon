@@ -7,6 +7,8 @@
     <ProjectGuid>{F8A50B12-70E4-45D1-82E2-F11C65F1DAD3}</ProjectGuid>
     <ProjectTypeGuids>{82B43B9B-A64C-4715-B499-D71E9CA2BD60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
     <RootNamespace>AmbientExtension</RootNamespace>
     <AssemblyName>AmbientExtension</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -53,5 +55,13 @@
     <MakeDir Directories="$(AmbientExtensionPublishDirectory)" />
     <Copy SourceFiles="$(OutputPath)$(AssemblyName).vsix" DestinationFiles="$(AmbientExtensionPublishDirectory)\AmbientExtension.vsix" SkipUnchangedFiles="true" />
     <Message Importance="high" Text="Ambient Extension published to $(AmbientExtensionPublishDirectory)\AmbientExtension.vsix" />
+  </Target>
+  <Target Name="CopyAmbientExtensionVsixToTheme" AfterTargets="Build" Condition="'$(CreateVsixContainer)' == 'true' and '$(DesignTimeBuild)' != 'true'">
+    <PropertyGroup>
+      <AmbientExtensionThemeDirectory>$(MSBuildProjectDirectory)\..\..\theme\_vsix_2026</AmbientExtensionThemeDirectory>
+    </PropertyGroup>
+    <MakeDir Directories="$(AmbientExtensionThemeDirectory)" />
+    <Copy SourceFiles="$(TargetVsixContainer)" DestinationFiles="$(AmbientExtensionThemeDirectory)\AmbientExtension.vsix" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="Ambient Extension copied to $(AmbientExtensionThemeDirectory)\AmbientExtension.vsix" />
   </Target>
 </Project>
